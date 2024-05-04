@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello Dosto </h1>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 9, 8]
+        console.log("Array is =", arr);
+        const delData = 5
+        let index = arr.indexOf(delData)
+        console.log(` "element ${delData} found And " At  index number of search element :${index} `);
+        if (index >= 0) {
+            console.log(`Element of ${delData} found at ${index} index `);
+            arr.splice(index, 1)
+        }
+        else {
+            console.log(`Element  Not found at In Arrar !! `);
+        }
+        console.log("New Array :", arr);
+    </script>
+</body>
+
+</html>
